@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  background-color: black;
+}
+
+* {
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.header-box {
+  background-color: #DE806B;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.parallax-bg {
+  /* Full height */
+  height: 100%;
+  max-width: 100vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-header a:hover {
+  text-decoration: none;
+}
+
+.nv-link {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  color: white;
+  font-size: 18px;
+}
+
+.nv-link:hover {
+  text-shadow: 0px 0px 6px #ffffff;
+}
+
+
+/*---Media Queries --*/
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+  .nv-link {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nv-link {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .radio-header {
+    display: none !important;
+  }
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.fade-down {
+  transform: translateY(+100px);
+  opacity: 0;
+}
+
+.fade-left {
+  transform: translateX(+100px);
+  opacity: 0;
+}
+
+
+.animate {
+  transform: translateY(0);
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition: ease 1s;
+}
+/* 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+} */
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.fa:hover {
+    opacity: 0.25;
+    text-decoration: none;
+    color:white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+/*
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+*/

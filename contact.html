@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Braydon Awesome</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="style.css" rel="stylesheet">
+	<script>
+		window.addEventListener('load', (event) => {
+			let observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						setTimeout(function() { entry.target.classList.add('animate'); }, 200);
+						observer.unobserve(entry.target);
+					}
+				});
+			});
+			 
+			document.querySelectorAll('.fade-down').forEach(obj => {
+				observer.observe(obj);
+			});
+		});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="parallax-bg" style="background-color: black; padding-left: 2em">
+        <div class="nav-header">
+            <div style="padding: 1.5em 0 1.5em">
+                <h1 class="radio-header" style="color: white; font-style: italic; display: inline-block">contact</h1>
+                <div style="right: 0; position: absolute; padding: 0 1.5em 0; display: inline-block">
+                    <a href="index.html"><h3 style="color: yellow; padding: 0 0 0.5em; font-weight: 900;">BYOC productions</h3></a>
+                    <ul style="text-align: right">
+                        <li class="nv-link">videos</li></a>
+                        <li class="nv-link">photography</li></a>
+                        <a href="music.html"><li class="nv-link">music</li></a>
+                        <a href="radio.html"><li class="nv-link">radio</li></a>
+                        <a href="contact.html"><li class="nv-link">contact</li></a>
+                    </ui>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <a href="https://open.spotify.com/artist/7zLqPeBg8Wp8TNuV4LQRWC?si=9cJoYzR7QZyDgFI93a-Wmw" class="fa fa-spotify"></a>
+            <a href="https://soundcloud.com/znico_teen" class="fa fa-soundcloud"></a>
+            <a href="https://instagram.com/braydon_almighty" class="fa fa-instagram"></a>
+            <a href="https://instagram.com/saintlogicband" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/@b.y.o.cproductions3570" class="fa fa-youtube"></a>
+        </div>
+	</div>
+</body>
+</html>

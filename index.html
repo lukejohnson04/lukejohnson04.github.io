@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Braydon Awesome</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+	<script>
+		window.addEventListener('load', (event) => {
+			let observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						setTimeout(function() { entry.target.classList.add('animate'); }, 200);
+						observer.unobserve(entry.target);
+					}
+				});
+			});
+			 
+			document.querySelectorAll('.fade-down').forEach(obj => {
+				observer.observe(obj);
+			});
+
+			document.querySelectorAll('.fade-left').forEach(obj => {
+				observer.observe(obj);
+			});
+		});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="parallax-bg" style="background-image: url(homebg.jpg);">
+		<div class="nav-header">
+			<div style="padding: 1.5em 0 1.5em">
+				<div style="right: 0; position: absolute; padding: 0 1.5em 0; display: inline-block">
+					<a href="index.html"><h3 style="color: yellow; padding: 0 0 0.5em; font-weight: 900;">BYOC productions</h3></a>
+					<ul style="text-align: right">
+						<li class="nv-link">videos</li></a>
+						<li class="nv-link">photography</li></a>
+						<a href="music.html"><li class="nv-link">music</li></a>
+						<a href="radio.html"><li class="nv-link">radio</li></a>
+						<a href="contact.html"><li class="nv-link">contact</li></a>
+					</ui>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main class="container-lg" style="background-color: black;">
+		<div style="margin-top: 350px; margin-bottom: 350px;">
+			<div class="col col-lg-6 mx-auto fade-down" style="text-align: center">
+				<h1 style="color: white; padding: 2em; font-style: italic;">Braydon Curry is a talented multi instrumentalist, photographer, videographer, writer, comedian, and all around artist, located in Charlotte North Carolina.</h1>
+			</div>
+		</div>
+	</main>
+	<main class="container-lg" style="background-color: rgb(9, 6, 9)">
+		<div style="margin-top: 200px;">
+			<div class="col col-lg-6 mx-auto fade-down" style="text-align: center; padding-bottom: 200px;">
+				<h1 style="color: white; padding: 2em; font-style: italic;">Looking for Cooper</h1>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/9DQ2gr1uRyc?si=OTo7onNZR5er-OV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer style="height: 50px">
+	</footer>
+
+<!-- Navigation -->
+
+
+<!--- Image Slider -->
+
+
+<!--- Jumbotron -->
+
+
+<!--- Welcome Section -->
+
+
+<!--- Three Column Section -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+<!--- Footer -->
+
+
+
+
+</body>
+</html>
